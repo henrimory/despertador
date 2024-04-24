@@ -1,0 +1,118 @@
+*{
+    box-sizing:border-box ;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+body, html{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(131, 16, 70);
+}
+
+.container{
+    background-image: url(/imagem/despertador.png);
+    background-position: center left;
+    background-size: cover;
+    width: 1200px;
+    height: 700px;
+}
+
+.container .alarm-container{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 15%;
+    right: 31%;
+    width: 470px;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: rgba(81, 69, 69, 0.8);
+    box-shadow: 0 10px 25px rgba(44, 43, 43, 0.1);
+    color: #fff;
+    margin: 10px;
+    padding: 10px;
+}
+
+.container .alarm-container img{
+    margin-top: 20px;
+    max-width: 125px;
+    border-radius:50px ;
+}
+
+.alarm-container h1{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0;
+    border-radius: 5px;
+    box-shadow: 0 20px 30px #4212a9;
+    color:rgb(245,245,245);
+
+    
+}
+
+.container .content{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.content.disable{
+    cursor: no-drop;    
+}
+
+.container .content .alarm-controls{
+    display:grid ;
+    align-items: center;
+    justify-content: center;
+    margin:5px;
+    border-radius: 5px;
+    border: 1px solid rgb(245,245,245);
+}
+
+.content.disable .alarm-controls{
+    opacity: .6;
+    pointer-events: none;
+}
+.container .content select{
+    margin: 10px;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    color: rgb(245,245,245);
+
+}
+
+.container .content select option{
+    width: 100%;
+    background: transparent;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px;
+    color: #000;
+
+}
+
+.container button{
+    width: 435px;
+    border: none;
+    font-size: 22px;
+    font-weight: bolder;
+    padding: 17px 0;
+    margin-top: 20px;
+    border-radius: 5px;
+    background:rgb(237, 30, 30);
+    color: #fff;
+    cursor: pointer;
+}
+
+.container button:hover{
+    color: #6f1010;
+}
